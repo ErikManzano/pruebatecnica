@@ -1,0 +1,294 @@
+:root {
+    --primario: #1A1A21;
+    --secundario: #001e50;
+    --secundario-hover: #01338b;
+    --terciario: ;
+    --blanco: #FFF;
+    --negro: ;
+    --titulos: 'Lato', sans-serif;
+    --contenido: 'Karla', sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+body {
+    background-color: var(--blanco);
+}
+@media screen and (max-width: 650px) {
+    body {
+        padding-top: 15vh;
+    }
+}
+
+/** Globales **/
+a, h1, h2, h3, h4 {
+    font-family: var(--titulos);
+}
+
+p, ul {
+    font-family: var(--contenido);
+}
+
+/** Botones **/
+.btn-cta {
+    background-color: var(--secundario);
+    border-radius: 3rem;
+}
+.btn-cta:hover {
+    background-color: var(--secundario-hover);
+}
+
+.hover-underline {
+    display: inline-block;
+    position: relative;
+    color: var(--blanco);
+}
+.hover-underline:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: var(--blanco);
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+.hover-underline:hover:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+/** Navbar **/
+.navbar {
+    background-color: var(--primario);
+}
+.nav-link:hover,
+.nav-link.active {
+    border-bottom: 3px solid var(--blanco);
+    transform: scale(1.1);
+    transition: transform 0.25s ease-in;
+}
+
+
+/** Hero **/
+@media screen and (min-width: 650px) {
+    .hero {
+        height: 100vh;
+        padding: 2rem 0;
+    }
+}
+@media screen and (max-width: 649px) {
+    .hero {
+        min-height: 100%;
+        width: 100%;
+        padding-bottom: 5rem;
+    }
+}
+.headline {
+    left: 130px;
+}
+.headline-colored {
+    color: var(--secundario);
+}
+.clipped {
+    clip-path: polygon(40% 0, 100% 0%, 100% 100%, 0% 100%);
+}
+@media screen and (max-width: 650px){
+    .headline {
+        left: 20px;
+    } 
+    .clipped {
+        clip-path: none;
+        max-height: 30rem!important;
+    }
+}
+.hero-image {
+    min-height: 30rem;
+    background-image: url(/img/hero01.webp);
+    background-position: center;
+    background-size: cover;
+    z-index: -1;
+    min-width: 100%;
+}
+.hero-image-mobile {
+    min-height: 30rem;
+    background-image: url(/img/hero01.webp);
+    background-position: center;
+    background-size: cover;
+    z-index: -1;
+    min-width: 100%;
+}
+
+/** Iconos **/
+.bg-gradiente {
+    background: rgb(26,26,33);
+    background: linear-gradient(180deg, rgba(26,26,33,1) 0%, rgba(0,30,80,1) 100%);
+    min-width: 100%;
+}
+
+/* Card Carro */
+.card {
+    width: 100%;
+    border-radius: 8px;
+    border: none;
+}
+
+.card-body {
+    padding: 2rem;
+}
+
+.card img {
+    max-height: 20rem;
+    max-width: 100%;
+    object-fit: cover;
+    border-radius: 8px 8px 0 0;
+}
+
+.card-button {
+    display: inline-block;
+    justify-content: center;
+    padding: 1rem 0;
+    width: 100%;
+    background-color: var(--secundario);
+    color: var(--blanco);
+    border-radius: 8px;
+}
+
+.card-button:hover {
+    text-decoration: none;
+    background-color: var(--secundario-hover);
+    color: var(--blanco);
+}
+
+.price {
+    color: #16C748;
+    font-weight: bold;
+}
+
+/* Galería */
+.galeria img {
+    background-size: cover;
+    background-position: center;
+    object-fit: cover;
+    transition: all .3s linear;
+    overflow: hidden;
+    min-height: 40rem;
+    min-width: 100%;
+}
+.galeria img:hover, .card img:hover {
+    filter: brightness(75%);
+}
+.img-contenedor {
+    max-height: 20rem
+}
+
+/* Footer/Contacto */
+footer {
+    background-color: var(--primario);
+}
+.to-top {
+    position: fixed;
+    z-index: 1;
+    background-color: var(--secundario);
+    border: 1px solid var(--blanco);
+    border-radius: 50%;
+    color: white;
+    bottom: 4rem;
+    right: 4rem;
+    width: 7rem;
+    height: 7rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3.2rem;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.4s;
+}
+.to-top.active {
+    opacity: 1;
+    pointer-events: auto;
+    bottom: 2rem;
+}
+.to-top.active:hover {
+    background-color: var(--secundario-hover);
+}
+.iconos i {
+    color: white;
+    transition: all .2s linear;
+    font-size: 3rem;
+}
+.iconos i:hover {
+    color: var(--secundario-hover);
+}
+
+/* Mapa */
+.mapa iframe {
+    max-width: 35rem;
+    min-height: 20rem;
+    border: none;
+    border-radius: 1.6rem;
+}
+
+/* Animaciones fade */
+.reveal {
+    position: relative;
+    transform: translateY(15rem);
+    opacity: 0;
+    transition: opacity 1s ease;
+    transition: .75s all ease;
+}
+.reveal.active {
+    transform: translateY(0);
+    opacity: 1;
+}
+.active.fade-bottom {
+    animation: fade-bottom .7s ease-in;
+}
+.active.fade-left {
+    animation: fade-left .7s ease-in;
+}
+.active.fade-right {
+    animation: fade-right .7s ease-in;
+}
+@keyframes fade-bottom {
+    0% {
+        transform: translateY(5rem);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+@keyframes fade-left {
+    0% {
+        transform: translatex(-10rem);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+@keyframes fade-right {
+    0% {
+        transform: translateX(10rem);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}

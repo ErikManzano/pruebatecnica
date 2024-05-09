@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="es-mx">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nova Cars - Los mejores modelos de VW a tu alcance</title>
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="/css/normalize.css">
+    <link rel="stylesheet" href="/css/style.css">
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="/img/logo.png" type="image/x-icon">
+
+    <!-- Fuentes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Karla:wght@200..800&family=Lato:wght@400;700;900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark py-md-3 px-md-5 fixed-top">
+            <div class="container-fluid">
+                <!-- Logotipo -->
+                <a href="/" class="navbar-brand mx-auto">
+                    <img class="img-fluid" src="img/logo.svg" alt="">
+                </a>
+
+                <!-- Toggle Button -->
+                <button
+                    class="navbar-toggler mx-auto mx-md-0 my-5"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation"
+                >
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Nav Menu -->
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mx-auto mb-2 mb-lg-0 justify-content-start text-center">
+                        <li class="nav-item mx-5">
+                            <a class="nav-link menu-link text-white fs-4" href="#Inicio">Inicio</a>
+                        </li>
+                        <li class="nav-item mx-5">
+                            <a class="nav-link menu-link text-white fs-4" href="#Servicios">Servicios</a>
+                        </li>
+                        <li class="nav-item mx-5">
+                            <a class="nav-link menu-link text-white fs-4" href="#Nosotros">Nosotros</a>
+                        </li>
+                        <li class="nav-item mx-5">
+                            <a class="nav-link menu-link text-white fs-4" href="#Modelos">Modelos</a>
+                        </li>
+                        <li class="nav-item mx-5">
+                            <a class="nav-link menu-link text-white fs-4" href="#Galeria">Galería</a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- FIN Nav Menu -->
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero -->
+        <section id="Inicio" class="container-fluid">
+            <div class="d-sm-flex align-items-center justify-content-between w-100 hero">
+                <!-- Hero Image solo para movil -->
+                <div class="col-md-8 h-100 clipped hero-image-mobile d-md-none"></div>
+                <div class="col-md-4 mx-auto my-5 mb-sm-0 px-5 ps-md-5 headline">
+                    <span class="fs-1 text-uppercase">Nova Cars</span>
+                    <h1 class="display-1 my-4 fw-bold">Volkswagen<span class="headline-colored fw-bold""> Innovación en movimiento</span></h1>
+                    <p class="fs-2">Conducimos el futuro hoy, ofreciendo tecnología de vanguardia y diseño revolucionario en cada vehículo. <span class="fw-bold">Explora nuestra gama de modelos emblemáticos y únete a la experiencia de conducir un Volkswagen. </span> Prueba una nueva era de movilidad.</p>
+                    <a href="#Modelos" class="btn btn-cta fs-1 px-5 py-3 text-white mt-5 mt-sm-0">¡Obtén el tuyo!</a>
+                </div>
+                <!-- Hero Image solo para tablet y desktop -->
+                <div class="col-md-8 h-100 clipped hero-image d-none d-md-block hero" id="dynamic-hero"></div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Servicios -->
+    <section id="Servicios" class="container bg-gradiente">
+        <div class="text-white row justify-content-center align-items-center g-5 p-0 reveal">
+            <div class="col-10">
+                <div class="p-5">
+                    <h1 class="display-1 text-center fw-bold">Experiencia de conducción superior</h1>
+                    <h3 class="fs-1 text-center">Explora nuestra gama de vehículos impulsados por tecnología de vanguardia, diseñados para llevarte más allá de los límites de lo ordinario.</h3>
+                </div>
+                <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-3 justify-content-center g-5 p-5">
+                    <div class="col mb-5 text-center h-100"> <!-- Icono -->
+                        <img class="icono-servicios img-fluid mb-3" src="img/icono-servicios01.svg" alt="Icono vehiculo">
+                        <p class="fs-2">Potencia excepcional con nuestro motor de alto rendimiento, diseñado para emocionar en cada viaje.</p>
+                    </div>
+                    <div class="col mb-5 text-center h-100"> <!-- Icono -->
+                        <img class="icono-servicios img-fluid mb-3" src="img/icono-servicios02.svg" alt="Icono seguridad">
+                        <p class="fs-2">Priorizamos tu seguridad con características avanzadas de protección en todos nuestros vehículos.</p>
+                    </div>
+                    <div class="col mb-5 text-center h-100"> <!-- Icono -->
+                        <img class="icono-servicios img-fluid mb-3" src="img/icono-servicios03.svg" alt="Icono atencion">
+                        <p class="fs-2">Equipo dedicado de atención al cliente listo para responder tus preguntas y brindarte apoyo cuando lo necesites.</p>
+                    </div>
+                    <div class="col mb-5 text-center h-100"> <!-- Icono -->
+                        <img class="icono-servicios img-fluid mb-3" src="img/icono-servicios04.svg" alt="Icono volante">
+                        <p class="fs-2">Experiencia única de manejo con nuestra tecnología de conducción asistida que brinda comodidad y seguridad en cada trayecto.</p>
+                    </div>
+                    <div class="col mb-5 text-center h-100"> <!-- Icono -->
+                        <img class="icono-servicios img-fluid mb-3" src="img/icono-servicios05.svg" alt="Icono mantenimiento">
+                        <p class="fs-2">Garantía de calidad respaldada por nuestro programa de mantenimiento certificado, asegurando un rendimiento óptimo y duradero.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Nosotros -->
+    <section id="Nosotros" class="container-lg my-5">
+        <div class="bg-white row justify-content-center align-items-center g-5 py-5">
+            <div class="col-md-6 text-center p-5 reveal fade-left">
+                <img class="img-fluid" src="img/certified-nova.svg" alt="Logo Nova Cars certificado">
+            </div>
+            <div class="col-md-6 px-5 reveal fade-right">
+                <h1 class="display-3">Somos distribuidor oficial y autorizado por <span class="headline-colored fw-bold">Volkswagen</span></h1>
+                <ul class="fs-2">
+                    <li>Comprometidos con la excelencia en la distribución de vehículos Volkswagen.</li>
+                    <li>Ofrecemos una amplia gama de modelos Volkswagen para satisfacer tus necesidades.</li>
+                    <li>Nuestro compromiso es proporcionarte un servicio excepcional y una experiencia de compra sin igual.</li>
+                </ul>
+                <a href="#Modelos" class="btn btn-cta fs-2 px-5 py-3 text-white mt-5 mt-sm-0">Explora los modelos<i class="bi bi-arrow-down ms-4"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modelos -->
+    <section id="Modelos" class="container-fluid bg-gradiente pt-5">
+        <div class="text-white px-5 reveal">
+            <h1 class="display-1 text-center fw-bold">Nuestros modelos top del 2024</h1>
+            <h3 class="fs-1 text-center">Descubre la excelencia automotriz con nuestros modelos estrella del 2024. En Nova Cars, nos enorgullece presentar una cuidadosa selección de los vehículos más destacados de Volkswagen para este año.</h3>
+        </div>
+        <div class="container-xl">
+            <div class="row row-cols-1 row-cols-lg-3 justify-content-center align-items-center mx-auto g-5 p-5 mt-5">
+                <div class="col reveal">
+                    <div class="card">
+                        <img src="/img/taos.webp" class="card-img-top card-image" alt="Fotografia del Modelo Taos 2024">
+                        <div class="card-body">
+                            <h4 class="card-title fs-1 fw-bold">Taos 2024</h5>
+                            <p class="card-text fs-3">Taos te da la potencia necesaria para convertir el mejor rendimiento en libertad y el torque en emoción. Eso sí es un camino diferente.</p>
+                            <p class="card-text fs-3">Enganche desde:</p>
+                            <p class="card-text fs-2 price">$70,000</p>
+                            <a href="#" class="btn card-button fs-3">Haz tu cotización</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card reveal">
+                        <img src="/img/nivus.jpeg" class="card-img-top card-image" alt="Fotografia del Modelo Nivus 2024">
+                        <div class="card-body">
+                            <h4 class="card-title fs-1 fw-bold">Nivus 2024</h5>
+                            <p class="card-text fs-3">El SUVW que manifesta su potencia y con un diseño que complementa tu personalidad y su tecnología que eleva cada aspecto de tu experiencia.
+                            </p>
+                            <p class="card-text fs-3">Enganche desde:</p>
+                            <p class="card-text fs-2 price">$50,000</p>
+                            <a href="#" class="btn card-button fs-3">Haz tu cotización</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card reveal">
+                        <img src="/img/jetta.jpeg" class="card-img-top card-image" alt="Fotografia del Modelo Jetta 2024">
+                        <div class="card-body">
+                            <h4 class="card-title fs-1 fw-bold">Jetta 2024</h5>
+                            <p class="card-text fs-3">Disfrútalo todos los días con innovación, diseño único y un increíble dinamismo para que dejes en claro que eres cada vez mejor.</p>
+                            <p class="card-text fs-3">Enganche desde:</p>
+                            <p class="card-text fs-2 price">$60,000</p>
+                            <a href="#" class="btn card-button fs-3">Haz tu cotización</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Galeria -->
+    <section id="Galeria" class="container-lg my-5">
+        <div class="container-xl py-5 reveal">
+            <div class="text-dark px-5">
+                <h1 class="display-1 text-center fw-bold">Galería</h1>
+            </div>
+            <div class="row justify-content-center align-items-center">
+                <div class="col-12 col-lg-9">
+                    <div class="galeria row g-3 p-5">
+                        <div class="col-12 col-lg-8 overflow-hidden">
+                            <img class="img-fluid" src="img/galeria01.jpg" alt="Imagen galeria 01">
+                        </div>
+                        <div class="col-12 col-lg-4 overflow-hidden">
+                            <img class="img-fluid" src="img/galeria02.jpg" alt="Imagen galeria 02">
+                        </div>
+                        <div class="col-12 col-lg-4 overflow-hidden">
+                            <img class="img-fluid" src="img/galeria03.jpg" alt="Imagen galeria 03">
+                        </div>
+                        <div class="col-12 col-lg-4 overflow-hidden">
+                            <img class="img-fluid" src="img/galeria04.jpg" alt="Imagen galeria 04">
+                        </div>
+                        <div class="col-12 col-lg-4 overflow-hidden">
+                            <img class="img-fluid" src="img/galeria05.jpg" alt="Imagen galeria 05">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <footer>
+        <div id="Contacto" class="container pt-5">
+            <div class="text-white py-5">
+                <h3 class="fs-1 text-center px-5">Explora el mundo de los vehículos Volkswagen con Nova Cars. Contáctanos para conocer nuestros modelos exclusivos y servicios especializados. Nuestro equipo experto está listo para ayudarte en cada paso. ¡Esperamos atenderte pronto y acompañarte hacia tu próximo Volkswagen de ensueño!</h3>
+            </div>
+            <div class="row justify-content-center align-items-center border-bottom">
+                <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 justify-content-center text-white g-2 p-5">
+                    <div class="col mb-5">
+                        <div class="text-start">
+                            <div class="fs-4 fw-bold">Dirección</div>
+                            <div class="fs-5">Ciudad de México, Delegación, Calle Principal, CP. 00000</div>   
+                        </div>
+                        <div class="text-start pt-3">
+                            <div class="fs-4 fw-bold">E-mail</div>
+                            <div class="fs-5">novacars@correo.com</div>
+                        </div>
+                    </div>
+                    <div class="col mb-5">
+                        <div class="text-start">
+                            <div class="fs-4 fw-bold">Teléfono</div>
+                            <div class="fs-5">+00 1234 5678</div>   
+                            <div class="fs-5">+00 5678 4321</div>   
+                        </div>
+                        <div class="text-start pt-3">
+                            <div class="fs-4 fw-bold">Horarios de atención</div>
+                            <div class="fs-4">Lunes a Viernes de 9:00 a 18:00 hrs.</div>   
+                            <div class="fs-4">Sábado de 9:00 a 14:00 hrs.</div>   
+                        </div>
+                    </div>
+                    <div class="col mb-5 mapa">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7527.264719011496!2d-99.13656288866266!3d19.432584121577996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1fff62a4ef77b%3A0xf11a5f236952abf8!2sZ%C3%B3calo%2C%20Ciudad%20de%20M%C3%A9xico%2C%20Centro%2C%2006000%20Ciudad%20de%20M%C3%A9xico%2C%20CDMX!5e0!3m2!1sen!2smx!4v1620316344805!5m2!1sen!2smx" 
+                        style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    </div>
+                </div>
+            </div>
+            <div class="container-fluid row justify-content-center align-items-center p-3">
+                <div class="col-12 col-lg-2 py-5 py-lg-0 justify-content-center align-items-center text-center text-lg-start"> <!--Texto barra de información-->
+                    <a href="/">
+                        <img class="text- img-fluid" src="img/footer-vw.svg" alt="Logotipo Volkswagen Footer">
+                    </a>
+                </div>
+                <!-- Redes sociales -->
+                <div class="col-12 col-lg-3">
+                    <div class="iconos py-5 py-lg-0 text-center">
+                        <a href="#LinkFacebook" target="_blank" rel="noreferrer noopener">
+                            <i class="bi bi-facebook mx-2" aria-hidden="true"></i>
+                        </a>
+                        <a href="#LinkInstagram" target="_blank" rel="noreferrer noopener">
+                            <i class="bi bi-instagram mx-2" aria-hidden="true"></i>
+                        </a>
+                        <a href="#LinkWhatsapp" target="_blank" rel="noreferrer noopener">
+                            <i class="bi bi-whatsapp fa-xl mx-2" aria-hidden="true"></i>
+                        </a>
+                    </div>
+                </div>
+                <!-- Copyright -->
+                <div class="col-12 col-lg-2 text-center">
+                    <h4 class="mt-3 text-white fs-5">NOVA CARS | Todos los derechos reservados © 2024</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Boton To-Top -->
+    <a href="#" class="to-top">
+        <i class="bi bi-chevron-up" aria-hidden="true"></i>
+    </a>
+        
+    <script src="/js/bootstrap.bundle.min.js"></script>
+    <script src="/js/app.js"></script>
+</body>
+</html>
